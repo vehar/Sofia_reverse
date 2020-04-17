@@ -100,6 +100,15 @@ s32SrcFrameRate = -1
 ==============================
 //From src decompiled!
 
+//Detect sensor
+      sensor_i2c_addr = 52;
+      *(_DWORD *)&sensor_addr_byte = 2;
+      *(_DWORD *)&sensor_data_byte = 1;
+      Init_i2c_0_sub_4A3CAC();
+      v4 = CMD_I2C_READ_sub_4A3DD0(12764) & 7;
+      printf("IMX29%d SensorID 0x%x\n", v4, v4);
+	  
+	  
 int __fastcall IMX290_Init_sub_4ABB98(int a1)
 {
   int result; // r0
@@ -113,12 +122,12 @@ int __fastcall IMX290_Init_sub_4ABB98(int a1)
     if ( result == 1 )
     {
       v3 = 0;
-      if ( (unsigned int)(genSensorMode - 0x3) <= 1 )
+      if ( (unsigned int)(genSensorMode - 0x3) <= 1 ) //Current init!!!!!
       {
         HI_MPI_SYS_GetReg(0x1201002C, &v3);
         v3 = v3 & 0xFC7DFFFF | 0x800000;
         HI_MPI_SYS_SetReg(0x1201002C, v3);
-        I2C_WRITE_sub_4A3EEC(0x3000, 0x1); //0x3000 Standby
+        I2C_WRITE_sub_4A3EEC(0x3000, 0x1); //0x3000 1 Standby
         usleep(0x186A0u);
         I2C_WRITE_sub_4A3EEC(0x3007, 0x0);
         I2C_WRITE_sub_4A3EEC(0x3009, 0x1);
