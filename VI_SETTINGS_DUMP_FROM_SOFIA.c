@@ -2016,3 +2016,134 @@ CSnap::ThreadAnalog--CaptureGetJPEG__faild!
 src/AVenc.c(3321) [VENC_DO_VencGetStream]: time out
 src/MotionDetect.c(620) [DoMotionCapData]: HI_MPI_VPSS_GetChnFrame fail,Error(0xa007800e)
 src/AVenc.c(3321) [VENC_DO_VencGetStream]: time out
+
+
+//LOG ON RTSP connection from VLC (video + audio)
+RTP: onClientConnect enginedId 0 , clientId 0 , ip:port 192.168.1.20:60888 
+>>>>>>>>>>>>>>>>>>come here,add RtspSessionCommList>>>>>>>>>>>>>>>>>>>>
+RTP: procOptions
+parseLine : 
+RTP: onDescribe engineId 0 , clientId 0 
+RTP: procDescribe
+parseLine : 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp?real_stream 
+strIP: 192.168.1.10:554
+strIP: 192.168.1.10, strPort: 554, nChannel: 0, nStream: 0
+user name[admin]
+RTP: contentBase is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/ 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp?real_stream 
+RTP: content: v=0
+o=- 38990265062388 38990265062388 IN IP4 192.168.1.10
+s=RTSP Session
+c=IN IP4 192.168.1.10
+t=0 0
+a=control:*
+a=range:npt=0-
+m=video 0 RTP/AVP 98
+a=rtpmap:98 H265/90000 
+a=range:npt=0-
+a=framerate:0S
+a=fmtp:98 profile-id=010101;sprop-pps=RAHA8vA8kA==;sprop-sps=QgEBAWAAAAMAsAAAAwAAAwB7oAPAgBDlja5JMvTcBAQEAg==;sprop-vps=QAEMAf//AWAAAAMAsAAAAwAAAwB7rAk=;sprop-sei=TgHlBBpWAACA;
+a=framerate:25
+a=control:trackID=3
+m=audio 0 RTP/AVP 8
+a=control:trackID=4
+
+RTP: procDescribe: RTSP/1.0 200 OK
+Content-Type: application/sdp
+Server: H264DVR 1.0
+Cseq: 3
+Content-Base: rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/
+Cache-Control: private
+x-Accept-Retransmit: our-retransmit
+x-Accept-Dynamic-Rate: 1
+Content-Length: 471
+
+v=0
+o=- 38990265062388 38990265062388 IN IP4 192.168.1.10
+s=RTSP Session
+c=IN IP4 192.168.1.10
+t=0 0
+a=control:*
+a=range:npt=0-
+m=video 0 RTP/AVP 98
+a=rtpmap:98 H265/90000 
+a=range:npt=0-
+a=framerate:0S
+a=fmtp:98 profile-id=010101;sprop-pps=RAHA8vA8kA==;sprop-sps=QgEBAWAAAAMAsAAAAwAAAwB7oAPAgBDlja5JMvTcBAQEAg==;sprop-vps=QAEMAf//AWAAAAMAsAAAAwAAAwB7rAk=;sprop-sei=TgHlBBpWAACA;
+a=framerate:25
+a=control:trackID=3
+m=audio 0 RTP/AVP 8
+a=control:trackID=4
+
+RTP: onSetup 0 0 
+RTP: procSetup
+parseLine : 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/trackID=3 
+strIP: 192.168.1.10:554
+strIP: 192.168.1.10, strPort: 554, nChannel: 0, nStream: 0
+RTP/AVP;unicast;mode=PLAY;source=192.168.1.10;client_port=52776-52777;server_port=40006-40007;ssrc=00001BCC
+RTP: onSetup 0 0 
+RTP: procSetup
+parseLine : 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/trackID=4 
+strIP: 192.168.1.10:554
+strIP: 192.168.1.10, strPort: 554, nChannel: 0, nStream: 0
+RTP/AVP;unicast;mode=PLAY;source=192.168.1.10;client_port=52778-52779;server_port=40008-40009;ssrc=00001BCC
+RTP: procPlay
+parseLine : 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/ 
+strIP: 192.168.1.10:554
+strIP: 192.168.1.10, strPort: 554, nChannel: 0, nStream: 0
+session is 274080 
+rtp AdapterBufsize[512]
+video Connect 2 [82] 192.168.1.10:40006, 192.168.1.20:52776
+RTP: rtp session info is 192.168.1.10:40006 to 192.168.1.20:52776 
+audio Connect 2 [123] 192.168.1.10:40008, 192.168.1.20:52778
+RTP: rtps session info is 192.168.1.10:40008 to 192.168.1.20:52778 
+RTP: StartCapture: nChannel - 0 nStream - 0
+============onAlarm=========== arg=[1]
+ref : 7408 / 23148
+fps change [25/4],rtp_ms[231]
+============onAlarm=========== arg=[1]
+============onAlarm=========== arg=[1]
+ref : 3760 / 4010
+fps change [4/25],rtp_ms[40]
+============onAlarm=========== arg=[1]
+CCloudMediaManager::Start-------->get pub cfg ip failed [pub-cfg.secu100.net]
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+GetDssconfig===>send
+[{ "CfgProtocol" : { "Body" : { "AuthCode" : "6d8facd8d027bf13", "OemID" : "General", "OtherInfo" : "V4.02.R12.00031520.11012.042800.00200", "ProductID" : "50H20L", "SerialNumber" : "6d8facd8d027bf13" }, "Header" : { "CSeq" : "1", "MessageType" : "MSG_DSS_CFG_QUERY_REQ", "Version" : "1.0" } } }
+] 
+[DnsDebug]Domain Not in This Map i = 0, domain = pub-cfg.secu100.net
+[DNSDebug]Init Dns Get Dns ip:192.168.1.107, Socketfd: 126
+============onAlarm=========== arg=[1]
+===gethostbyname error for host:secu100.net
+GetNatServerIP error 
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:8.8.8.8, i = 0
+[DNSDebug]Init Dns Get Dns ip:8.8.8.8, Socketfd: 125
+============onAlarm=========== arg=[1]
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:223.5.5.5, i = 1
+HTTPClientSendRequest failed
+send request error ->[http://pub-cfg.secu100.net:8086]
+============onAlarm=========== arg=[1]
+ ===================GetNatServerIP===============> 
+RTP: procTeardown
+RTP: @@@@@@@@@@StopCapture: nChannel:0, nStream: 0
+ CRtpApp::StopCapture setSmartH264(TRUE) restart... nChannel[0] stream[0]
+ RTP: StopCapture: nChannel-0 uiStream-0, iRet: 0
+parseLine : 
+url is rtsp://192.168.1.10:554/user=admin&password=tlJwpbo6&channel=1&stream=0.sdp/ 
+RTP: DefaultRsp: RTSP/1.0 200 OK
+Server: H264DVR 1.0
+Cseq: 7
+Session: 274080
+
+
+RTP: ClientDisconnect 0 0 
+RTP: @@@@@@@@@@StopCapture: nChannel:0, nStream: 0
+TPTCPServer CloseClient: 0
+
