@@ -1,0 +1,565 @@
+# Sofia
+LibCrypto : g_cryptotype = 2
+CryptoDecrypt,556 or_sel=1
+flash/flash.c(112) [Flash_getLockVersion]: version:0x1001!
+**********************************************************************
+|                      SYSTEM INFO                                       
+|                 ID:           0x0001
+|       product type:           50H20L
+|           DSP chip:           DSP_HI3516CV300
+|     LIBDVR version:       Complied at Sep 17 2018 11:09:13 SVN:3057
+**********************************************************************
+src/HiSystem.c(1654) [getDefaultResolution]: readBuf = MaxResolution=1080P,g_maxResolution2Mto3M = 2
+LIBFVIDEO: Complied at Sep  7 2018 09:43:29 SVN:2657
+
+
+Sofia: $Version_fix: R12, $Source svn: 20228, $Include svn: 33051, $Build svn: 33058, Exchange svn: 33052, Build in:Sep 18 2018, 10:20:16, 0
+
+
+Infra: $base Dir Trunk, $Source svn: 32607, $Include svn: 2915, $Build in:Aug 30 2018, 21:45:06
+CInfra::start()>>>>>>>>>>
+CTimerManager::CTimerManager()>>>>>>>>>
+CThreadManager::CThreadManager()>>>>>>>>>
+
+libManager.a: $base Dir Trunk, $Source svn: 32540, $Include svn: 26910, $Build in:Aug  6 2018, 10:33:50
+
+CConfigManager::start()...
+CVerifyConfig::Start()...
+CDefaultConfig::Start()...
+
+CTime::getTimeZone():0  minu:0
+
+CTime::getTimeZone():0  minu:0
+
+===new timezone__-480__,old timezone__0___========
+
+CTime::setTimeZone(-480):TEI-8:00
+onVerifyNetIPFilter() ../../Manager/VerifyConfig.cpp 1125
+onVerifyNetDHCP() ../../Manager/VerifyConfig.cpp 1132
+onVerifyNetDDNS() ../../Manager/VerifyConfig.cpp 1137
+onVerifyNetEmail() ../../Manager/VerifyConfig.cpp 1142
+../../Manager/VerifyConfig.cpp,onVerifyDeviceDesc(1682): 
+custom config Ability.DeviceDesc verify failed with ret:20!
+ethMac:00:12:17:f7:d3:8a
+
+CTime::getTimeZone():-28800  minu:-480
+
+CTime::getTimeZone():-28800  minu:-480
+
+===new timezone__-120__,old timezone__-480___========
+
+CTime::setTimeZone(-120):TEC-2:00
+
+==timezone:-120==0=
+
+CTime::setTimeZone(-120):TEC-2:00
+CConfigManager::setConfig(System.TimeZone, )
+CConsole::start()...
+CMagicBox::start()...
+ethMac:00:12:17:f7:d3:8a
+--- use old SN --- year:2018
+
+initOEMinfo-->1436,[Source/MagicBox.cpp],m_oemInfo[BURN_OEM_ID]0,m_oemInfo[BURN_OEM_PRODUCT]0,m_oemInfo[BURN_OEM_SERIAL]0
+../../Manager/VerifyConfig.cpp,onVerifyDeviceDesc(1682): 
+CurrentTime:1970-01-01 02:00:36
+FlashTime:2000-11-30 09:03:29
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$CMOS NO PWOER$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+RecoverFlash Time:2000-11-30 09:03:54
+misc/rtc.c(166) [SystemTimeToRtcTimeSet]: Cannot Open Rtc Device
+CTime::setCurrentTime SystemTimeToRtcTimeSet falied
+Log Manager starting....!
+
+Log.a: $base Dir Trunk, $Source svn: 32728, $Include svn: 2919, $Build in:Aug 21 2018, 15:49:23
+
+=======Shut Down at 2000-11-30 09:03:29 with m_exitState[1]
+CDaylight::start()...
+m_cloudExAbility:0
+watchdog/wdt.c(124) [WatchdogCreate_noLock]: Needn't To Open WatchDog
+CConfigManager::getConfig 'Camera.FishLensParam', but default config is not set yet!
+@CDevAbility::start()>>>>>>>>>>
+HasIntelFunc: 1, HasCPCFunc: 0, HasNatFunc: 1, HasSpotFunc: 0, HasBaseFunc: 0, HasEnBaseFunc: 0, HasHVRFunc:0, FrontSwithType:1, cpu:255
+m_nVTotalChns: 1, m_nVCapChns: 1, m_nVPlayChns: 0, m_nDigDecChns: 0
+ Public_SearchString : can not find string _8188
+[DEBUG]: Net : LAN
+CMD_SET_DEV error!
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SensorID 0xffffffff
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SensorID 0xffffffff
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+AR0237 SensorID 0xffffffff
+Init dev i2c_0!
+IMX323 SensorID 0x0
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+zcb SensorID 0xffffffff
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SC2135 SensorID 0xffffffff
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SC2235 SensorID 0xffffffff
+Init dev i2c_0!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SC2315 SensorID 0xffffffff
+Init dev i2c_0!
+I2C_WRITE error!
+Init dev i2c_0!
+I2C_WRITE error!
+I2C_WRITE error!
+Init dev i2c_0!
+I2C_WRITE error!
+Init dev i2c_0!
+I2C_WRITE error!
+CMD_I2C_READ error!
+CMD_I2C_READ error!
+SC2235P SensorID 528 0xffffffff
+Init dev i2c_0!
+IMX307 SensorID 0x0
+Init dev i2c_0!
+IMX327 SensorID 0x0
+Init dev i2c_0!
+IMX291 SensorID 0x1
+IPC_50H20_Sensorchip IMX29x
+[DEBUG]: Sensor is IMX291! 0
+[DEBUG]: /mnt/mtd/Config/libfvideo_initdata.bat doesn't exist!
+[DEBUG]: Product_Info:
+Product:      1
+DSP:            1
+Sensor:         28
+IRcut:          65
+GUITheme List:
+CFrontboard::CFrontboard()>>>>
+CFrontBoardParser::Init()>>>>>>>>>
+CFrontBoardParser::Init()>>>>>>>>>
+
+
+Manager: $Rev: 1008 $, Build in:Sep 18 2018, 10:19:33
+CManager::start()>>>>>>>>>>
+
+Launched at Local Time 2000/11/30 09:03:54!
+CUserManager::start......
+onVerifyNetIPFilter() ../../Manager/VerifyConfig.cpp 1125
+CAutoMaintain::Start()...
+m_randomDelayMinutes:22
+NTPD: Start OK...
+CPacketManagerImp::CPacketManagerImp()>>>>>>>>>
+sm_packetBuf null use self heap memory!
+Adjust Page!
+Packet usage : 0K / 10239K, 0%
+
+----------------------[11-30 09:03:54]
+CCaptureBuffer::Init size = 2048 KB
+======= pre record buf 2048
+CConfigManager::getConfig 'AVEnc.EncodeStaticParam', but default config is not set yet!
+VideoOut SetInit Resolution:1024x768  m_ResolutionRate:1.050000
+
+
+Gdi: $base Dir Trunk, $Source svn: 32932, $Include svn: 2831, $Build in:Sep  4 2018, 15:29:11
+CGDI::start()>>>>>>>>
+
+@=================================
+         @mem = 0x00000000 0x00000000 0x00000000
+         @pitch = 0
+         @width = 0
+         @height = 0
+         @foramt = 0
+@===================================
+
+@=================================
+         @mem = 0x00000000 0x00000000 0x00000000
+         @pitch = 9212536
+         @width = 9212536
+         @height = 0
+         @foramt = 9212536
+@===================================
+CLocales::CLocales()>>>>>>>>>
+CFontManager::CFontManager()>>>>>>>>>
+CFontManager::CFontManager Open FontGB2312 File Failed!
+Language load path:/mnt/custom/data/Strings/English
+CConfigManager::getConfig 'General.SupportLang', but default config is not set yet!
+CDriverManager::CDriverManager()>>>>>>>>>
+
+
+Storage: $Rev: 922 $, $Author: liwj $, Build in:Mar 21 2018, 16:03:37
+
+
+Storage: $base Dir D_2010.08.03_WFS_V2.80.0.R08, $Source svn: 30609, $Include svn: 2747, $Build in:Mar 21 2018, 16:03:37
+CStorage::start()>>>>>>>>>>
+CDriverManager::Start()>>>>>>>>>
+at scan_storage_dev() disk_num:0.
+
+WFS: $base Dir Trunk, $Source svn: 195, $Include svn: 195, $Build in:Aug 28 2018, 09:25:11
+
+wfs_file_sys_init() libWFS.a $Rev: 9 $, Build in:Aug 28 2018 09:25:11
+disk_num = 0
+ide_num:0
+LIBDVR_PTHREAD - ide_port:3
+ide_mask:0x0
+ide_bad:0x0
+HotPlugThreadBodycap: 
+: TID=wfs_file_sys_init() end============================
+
+148
+driver basic parameter:
+ ----------------------------------------------------------------------------------------------------
+| dev.part |type|total_clus | temp_off | index_off | dir_off | data_off | rev_clus | sec/clus |status|
+|----------|----|-----------|----------|-----------|---------|----------|----------|----------|------|
+ ------------------------------------------------------------------------------------------------
+driver operation parameter:
+ -------------------------------------------------------------------------------------------------------------------------
+| dev.part | F| S|  curr  |        start1         |         end1          |        start2         |        end2           |
+|          |  |  |        |MM-DD HH:MM:SS|  clus  |MM-DD HH:MM:SS|  clus  |MM-DD HH:MM:SS|  clus  |MM-DD HH:MM:SS|  clus  |
+|----------|--|--|--------|--------------|--------|--------------|--------|--------------|--------|--------------|--------|
+ --------------------------------------------------------------------------------------------------------------------------
+driver time chart:
+ --------------------------------------------------------------------------
+|dev.part | period of time                                                 |
+|---------|----------------------------------------------------------------|
+ ------------------------------------------------------------------------
+driver time sections:
+ ------------------------------------------------------------------------
+|dev part |start_clus| end_clus |    start_time     |   end_time        |
+ ------------------------------------------------------------------------
+
+CMedia::start() $Rev: 972 $>>>>>
+sched set 98, 2
+src/HiSystem.c(1460) [HisiSysInit]: LibHicap Compiled Date: Sep 12 2018, Time: 09:40:13.
+src/HiSystem.c(1473) [HisiSysInit]: g_stDevParam.bVpssOnline:0 [0 offline; 1 online].
+src/HiSystem.c(1449) [Save_Sensor_Type]: Save_Sensor_Type: 28 
+2to1 half frame WDR mode
+cmos_set_image_mode: 0
+--IMX291 1080P 60fps LINE Init OK!-------------------
+onVerifyAudioInFormat() ../../Manager/VerifyConfig.cpp 1503
+onVerifyTour() ../../Manager/VerifyConfig.cpp 1417
+CSnapManager::start()...
+onVerifyNetEmail() ../../Manager/VerifyConfig.cpp 1142
+[DEBUG]: mirror=0
+[DEBUG]: Flip=0
+[DEBUG]: ~~~~~~~~~~IMX291_init  ~~~~~~~~~
+[DEBUG]: Denoise level:  Day[3]      Night[3]
+[DEBUG]: Denoise level:  Day[3]      Night[3]
+[DEBUG]: IR: 65
+src/OSDTitle.c(1213) [CaptureSetTitleV2]: venc_chn:0,not created!
+src/OSDTitle.c(1213) [CaptureSetTitleV2]: venc_chn:1,not created!
+[DEBUG]: Public_LinearWDR_Switch enWdrMode:0!
+linear mode
+--------------------------------IMX290 1080P 30fps LINE Init OK!------------------------
+[DEBUG]Libfvideo: FILE -> src/sensor/public_api.c, LINE -> 3005: wdr switch finish!
+src/OSDTitle.c(1213) [CaptureSetTitleV2]: venc_chn:0,not created!
+src/OSDTitle.c(1213) [CaptureSetTitleV2]: venc_chn:1,not created!
+src/AVenc.c(452) [ROI_Ctrl]: HI_MPI_VENC_GetRoiCfgEx 0xa0088005<111>!
+src/AVenc.c(476) [ROI_Ctrl]: HI_MPI_VENC_SetRoiCfgEx 0xa0088005<111>!
+src/AVenc.c(482) [ROI_Ctrl]: HI_MPI_VENC_GetRoiBgFrameRate 0xa0088005<111>!
+src/AVenc.c(515) [ROI_Ctrl]: HI_MPI_VENC_SetRoiBgFrameRate 0xa0088005<111>!
+src/AVenc.c(452) [ROI_Ctrl]: HI_MPI_VENC_GetRoiCfgEx 0xa0088005<111>!
+src/AVenc.c(476) [ROI_Ctrl]: HI_MPI_VENC_SetRoiCfgEx 0xa0088005<111>!
+src/AVenc.c(482) [ROI_Ctrl]: HI_MPI_VENC_GetRoiBgFrameRate 0xa0088005<111>!
+src/AVenc.c(515) [ROI_Ctrl]: HI_MPI_VENC_SetRoiBgFrameRate 0xa0088005<111>!
+[DEBUG]: camera_set_aeweight:0
+../../Media/VideoEnc.cpp,setJpegTagInfo(4499): pInfo (nil),len 0
+===shaohengkang_libdvr DevLens=0
+../../Media/VideoEnc.cpp,AppEncodeConfig(3347): 
+fps:15  bitrate:5415
+src/Capture.c(734) [CaptureSetFormat_t]: Compression:H264,fps:15.
+src/AVenc.c(708) [VENC_setAVBRParam]: HI_MPI_VENC_SetRcParam err:0xa0088003
+../../Media/VideoEnc.cpp,AppEncodeConfig(3347): 
+fps:20  bitrate:2126
+src/Capture.c(734) [CaptureSetFormat_t]: Compression:H264,fps:20.
+src/AVenc.c(708) [VENC_setAVBRParam]: HI_MPI_VENC_SetRcParam err:0xa0088003
+../../Media/VideoEnc.cpp,AppEncodeConfig(3347): 
+fps:1  bitrate:512
+src/AVenc.c(2722) [VENC_startH264Plus]: channel:2, create:0, enPayload:0 (must be 96 or 265) <ERROR>
+*******>>>>>> setOsdTitle  chn 0, intde 1, len: 256, w: 80, h:24
+setChannelTitleDot 24, 80
+CConfigManager::setConfig(AVEnc.Encode, )
+src/AVenc.c(3188) [VENC_framerateProc]: fps:25,lastViFps:-1 >>>>>>>>
+*******>>>>>> setOsdTitle  chn 0, intde 1, len: 256, w: 80, h:24
+setChannelTitleDot 24, 80
+lumi is 50 
+cont is 50 
+satu is 50 
+hue is 50 
+autance is 8 
+src/OSDTitle.c(1101) [OsdTitleParam_copy]: Invalid index:2.
+VIDEOENC: UpperEnable[1] SetToLib >>>>> ch[0] Stream[0] +[0] ++[1]
+src/AVenc.c(2728) [VENC_startH264Plus]: H264Plus has been Disabled
+src/Capture.c(1676) [CaptureStartH264PlusPlusV2]: enable : 1, channel: 0, vencChn : 0
+VIDEOENC: UpperEnable[1] SetToLib >>>>> ch[0] Stream[1] +[0] ++[0]
+src/Capture.c(1676) [CaptureStartH264PlusPlusV2]: enable : 0, channel: 0, vencChn : 1
+src/AVenc.c(2606) [VENC_startH264PlusPlus]: H264PlusPlus has been Disabled
+src/AVenc.c(2728) [VENC_startH264Plus]: H264Plus has been Disabled
+CRecordManager::start()>>>>>>>>>
+ListMng - BufListCreate: index 241 OK
+
+
+Comm: $base Dir Trunk, $Source svn: 32953, $Include svn: 2777, $Build in:Sep  5 2018, 20:12:35
+sPadName :General
+sRemoteName :General
+CFrontBoardProtocol::start()......
+KeyMap OK .............
+onVerifyComm() ../../Manager/VerifyConfig.cpp 1401
+CNutParser::Init()>>>>>>>>>
+CComm::start()>>>>>>>>>
+The thread create..........
+onVerifyComm() ../../Manager/VerifyConfig.cpp 1401
+The attr :  strName: [ Transparent ] cmdlen: [ 6 ] headlen:[ 1 ] strHead:[ 0xe0  0x0 ] UpMsg:[ 1 ] ParseMode:[0], LocalNo:0
+CPtz::CPtz()>>>>>>>>>
+onVerifyPTZ() ../../Manager/VerifyConfig.cpp 1406
+CConfigManager::getConfig 'Uart.PTZTour', but default config is not set yet!
+CConfigManager::getConfig 'Uart.PTZPreset', but default config is not set yet!
+CConfigManager::getConfig 'Uart.PTZPattern', but default config is not set yet!
+onVerifyPTZ() ../../Manager/VerifyConfig.cpp 1406
+CPtz::Init()>>>>>>>>>
+CRS485::CRS485()>>>>>>>>>
+CConfigManager::getConfig 'NetWork.NetKeyboard', but default config is not set yet!
+CNutParser::Init()>>>>>>>>>
+CNutParser::Init()>>>>>>>>>
+GetProductNickName() = 1
+CConfigManager::getConfig 'NetWork.NetKeyboard', but default config is not set yet!
+CRS485Protocol start...
+onVerifyPTZAlarmProtocol() ../../Manager/VerifyConfig.cpp 938
+CAlarmManager::instance()->start()...
+CAlarm::CAlarm()>>>>>>>>>
+CAlarm::Start()>>>>>>>>>
+Pea caps : 01, g_nCapture=1
+config->vAnalyzeAll[i].moduleType:1=================>
+src/imp.c(412) [ImpInit]: LIBIMP: Complied at Jun  6 2018 17:02:15,SVN:136.
+src/imp.c(414) [ImpInit]: ImpInit enter, channel is 0, module is 16
+src/imp.c(450) [ImpInit]: ****************ImpInit successful***************
+ONVIFS: Error! onvif not init!!!
+
+
+NetIP: $Rev: 1055 $, $Author: chencb $, Build in:Sep 18 2018, 10:19:28
+CNetService::start()>>>>>>>>>>
+onVerifyNetDDNS() ../../Manager/VerifyConfig.cpp 1137
+CConfigManager::getConfig 'NetWork.NetMobile', but default config is not set yet!
+DHCPD: start ...
+NETSTATED: start ...
+SMTPD: >>>>>>>>>>>>>Start
+
+
+LIBNETSERVICE_SMTP: $Version_fix: V0.01, $Svn: XXX, Build in:Sep 18 2018, 10:19:34, 0
+DDNS: Start ....
+ONVIFS: Error! onvif not init!!!
+DHCPPROTO: eth name(eth1) not valid
+DHCPPROTO: eth name(eth2) not valid
+DHCPPROTO: eth name(eth3) not valid
+DHCPPROTO: eth name(bond0) not valid
+AUTOSEARCH: setSerialNo(3207) m_statusSerialNo[1] m_SerialNo[6d8facd8d027bf13]
+AUTOSEARCH: start(118) Start ...
+AlarmCenter: Start ....
+RTP: CRtspSvrApp start ok 
+CRtpApp start ok 
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+
+
+LIBWEB: $Version_fix: V0.01, $Svn: , Build in:Sep 10 2018, 19:10:44, 0
+****************************************************************************httpd  1.00 Sep 10 2018, Status: NOK
+***** http port = 80, tcp port = 34567, udp port = 34568, language = 0, file name: /mnt/web
+****************************************************************************szUrl: http://:8080/ocx/Active.exe
+UPNP: start ...
+ARSP: Start ....
+CConfigManager::getConfig 'IPAdaptive.LastLoginDeviceIP', but default config is not set yet!
+
+
+NetIP: $Rev: 1055 $, $Author: chencb $, Build in:Sep 18 2018, 10:19:27
+CNetIP::start()>>>>>>>>>>
+WritePortInfo begin ==>>
+WritePortInfo begin11 ==>>
+WritePortInfo len=128
+WritePortInfo begin22 ==>>
+Save SysTime to Flash:2000-11-30 09:03:59, Time:574 Min, Trail:574 Min
+Transport: CServerIOThread start OK 
+Transport: CServerIOThread start OK 
+cfgNetCommon.UDPPort=[34568]
+s_DeviceMac=[6d8facd8d027bf13]
+msgID====1
+s_DevInfo.msgID====fe000001
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+-----------OnEncode----------->
+<-----------OnEncode-----------
+CNetManager start ok 
+onVerifyNetDHCP() ../../Manager/VerifyConfig.cpp 1132
+CLocalSDKManager start ok 
+s_DeviceMac=[6d8facd8d027bf13]
+>>>>>>>>CXmCloud: Start>>>>>>>>
+CHikVisionServer start ok 
+CNetIPConflict start ok 
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+ONVIFEXCH: onConfigNetCommon(2080) IP[192.168.1.10]_Gateway[255.255.255.0]_Submask[192.168.1.107]_Port[80]_Mac[00:12:17:f7:d3:8a]_Host[LocalHost]
+ONVIFS: Run InterVideoONVIF... ChNum[1] randnum[-2143040372]
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[0].scopes=onvif://www.onvif.org/type/video_encoder
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[1].scopes=onvif://www.onvif.org/type/audio_encoder
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[2].scopes=onvif://www.onvif.org/hardware/IPC-model
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[3].scopes=onvif://www.onvif.org/location/country/china
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[4].scopes=onvif://www.onvif.org/name/NVT
+ONVIFS: SetDeviceServiceDefaultConfig DevScopes.pScopes[5].scopes=onvif://www.onvif.org/Profile/Streaming
+ONVIFS: SetDefaultProfiesInfomation name[VideoE_000][VideoE_000] paddr[0xa1c4a0][0xa1c4a0]
+ONVIFS: SetDefaultProfiesInfomation name[VideoE_000][VideoE_000] paddr[0xa1c4a0][0xa1c4a0]
+ONVIFS: SetDefaultProfiesInfomation name[VideoE_000][VideoE_000] paddr[0xa1c4a0][0xa1c4a0]
+ONVIFS: SetDefaultProfiesInfomation ExProfiles.num[0]
+ONVIFS: Mainimgsize[1920*1080]
+ONVIFS: Eximgsize[704*576]
+ONVIFS: Snapimgsize[704*576]
+ONVIFS: ch[0] g_iMaxFps[25][25] MaxEncPower[93312000] SnapEncPower[405504] ExEncPower[8110080] mainEncPower[31104000]
+ONVIFS: MainResolutions[0] Width=[1280] Height=[720]
+ONVIFS: MainResolutions[1] Width=[1920] Height=[1080]
+ONVIFS: MainResolutions[2] Width=[2048] Height=[1536]
+ONVIFS: ExtraResolutions[0] Width=[704] Height=[576]
+ONVIFS: ExtraResolutions[1] Width=[352] Height=[288]
+ONVIFS: ExtraResolutions[0] Width=[704] Height=[576]
+ONVIFS: ExtraResolutions[1] Width=[352] Height=[288]
+SOAP: Start thread[onvif_normal], TID=[142], port[8899]
+SOAP: Start thread[onvif_search], TID=[142]
+ONVIFS: send hello ipaddr[192.168.1.10]
+
+####onvif_normal_process  eth0 : 0, eth2 : -1
+FrontboardWrite failed[writted:0  errRet:0]!
+
+#### onvif_probe_process eth0 : 0, eth2 : -1
+===================1==================================================
+===================2==================================================
+ONVIFS: scopes[onvif://www.onvif.org/type/video_encoder onvif://www.onvif.org/type/audio_encoder onvif://www.onvif.org/hardware/IPC-model onvif://www.onvif.org/location/country/china onvif://www.onvif.org/name/NVT onvif://www.onvif.org/Profile/Streaming ]
+ONVIFS: uuid[8043cc8c-5566-7788-99aa-001217f7d38a]
+Threads:
+               Name            PID  Prior State
+_______________________________________________________
+                    Main        142   64  Normal
+            TimerManager        143   50  Normal
+              SnapAnalog        144   50  Normal
+                 Console        145   50  Normal
+           DevFrontboard        164   50  Normal
+           DriverManager        149   50  Normal
+          CaptureManager        150   98  Normal
+                     FTP        170   50  Normal
+                                157   50  Normal
+           RecordManager        160   50  Normal
+                  RTPAPP        191   50  Normal
+                    Comm        165   50  Normal
+                  DevPtz        166   50  Normal
+                 RTSPSvr        190   50  Normal
+         HikVisionAccept        202   50  Normal
+                  Pooled        205   50  Normal
+                   Alarm        167   50  Normal
+                CXmCloud        200   50  Normal
+              UDP_Server        196   50  Normal
+    HikVisionMacSearchIP        201   50  Normal
+         HikVisionServer        203   50  Normal
+       HikVisionSearchIP        198   50  Normal
+              TCP_Server        195   50  Normal
+            NetIPManager        197   50  Normal
+          NetAlarmCenter        189   50  Normal
+         CNetStateReport        168   50  Normal
+                    SMTP        169   50  Normal
+          CNetIPConflict        204   50  Normal
+                    ARSP        194   50  Normal
+                CUpnpCli        193   50  Normal
+              DHCPClient        187   50  Normal
+       CAutoSearchDevice        188   50  Normal
+                LocalSDK        199   50  Normal
+Timers: ( 41740 Milli-Seconds Elapsed )
+_________________________________________
+        TPtzLink       41740 Idel
+    EventManager       41740 Idel
+                       41780 Idel
+IPA_StateNetLink       42040 Idel
+        SaveTime       42080 Idel
+                       42100 Idel
+                       42100 Idel
+     DetectTimer       42230 Idel
+        LockUser       42490 Idel
+    StorageAlarm       42570 Idel
+     BitrateStat       42600 Idel
+                       43100 Idel
+                       43220 Idel
+     LogSaveFile       46310 Idel
+        WatchDog       46320 Idel
+    AutoMaintain       46490 Idel
+                       47040 Idel
+          Encode       49190 Idel
+CheckNetStateipv4       52940 Idel
+  OnlineCheckNew       71570 Idel
+                      101200 Idel
+----------DAS Config  Changed --------
+===GetNatDnsSrvAddr ===> begin
+[DEBUG]: Linear Gamma!
+[DEBUG]: gamma  used[10]
+satu is 50 
+cont is 50 
+autance is 8 
+src/AVenc.c(3188) [VENC_framerateProc]: fps:17,lastViFps:25 >>>>>>>>
+src/AVenc.c(3188) [VENC_framerateProc]: fps:25,lastViFps:17 >>>>>>>>
+============onAlarm=========== arg=[1]
+libsoap: MB_CUR_MAX= 1
+SOAP: Creat master socket[118] successful!
+[DEBUG]: Public_LinearWDR_Switch enWdrMode:0!
+[DEBUG]: IR: 65
+satu is 50 
+[DEBUG]: color csc
+gethostbyname mac.secu100.net fail
+CCloudMediaManager::Start-------->get pub cfg ip failed [pub-cfg.secu100.net]
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+GetDssconfig===>send
+[{ "CfgProtocol" : { "Body" : { "AuthCode" : "6d8facd8d027bf13", "OemID" : "General", "OtherInfo" : "V4.02.R12.00031520.11012.042800.00200", "ProductID" : "50H20L", "SerialNumber" : "6d8facd8d027bf13" }, "Header" : { "CSeq" : "1", "MessageType" : "MSG_DSS_CFG_QUERY_REQ", "Version" : "1.0" } } }
+] 
+[DnsDebug]Domain Not in This Map i = 0, domain = pub-cfg.secu100.net
+[DNSDebug]Init Dns Get Dns ip:192.168.1.107, Socketfd: 79
+ ===================GetNatServerIP===============> 
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:8.8.8.8, i = 0
+[DNSDebug]Init Dns Get Dns ip:8.8.8.8, Socketfd: 79
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:223.5.5.5, i = 1
+HTTPClientSendRequest failed
+send request error ->[http://pub-cfg.secu100.net:8086]
+===gethostbyname error for host:pub-cfg.secu100.net
+CCloudAlarmCli::Start-------->get pub cfg ip failed [pub-cfg.secu100.net]
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+[DnsDebug]Domain Not in This Map i = 0, domain = pub-cfg.secu100.net
+[DNSDebug]Init Dns Get Dns ip:114.114.114.114, Socketfd: 79
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:114.114.114.114, i = 0
+[DNSDebug]Init Dns Get Dns ip:114.114.114.114, Socketfd: 79
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed pub-cfg.secu100.net, DNS:192.168.1.107, i = 1
+HTTPClientSendRequest failed
+send request error ->[http://pub-cfg.secu100.net:8086]
+---tracepoint---Source/MagicBox.cpp---getProducerInfo()---(2209)---: 
+[error] PushDevInfo getProducerInfo failed
+ver ---- V4.02.R12.00031520, [000 31 520]
+fopen error: No such file or directory
+[debug] send msg:{ "CapsCenter" : { "Body" : { "BuildTime" : "2018-09-18 10:20:16", "DevInfo" : { "CRC" : 3589, "Data" : "AOttWYsZYNCWWG05BACk0A==", "DeviceType" : 0, "EncrptType" : "ExAbility", "Key" : "19331229" }, "EncryptChipInfo" : { "Base" : 0, "DssLevel" : 0, "EnBase" : 0, "ExtraLevel" : 0, "Intel" : 1, "IntelCPC" : 0, "IpcDeviceType" : 0, "Nat" : 1, "OEMID" : 0, "OEMProuct" : 0, "OEMSerial" : 0, "Resolution" : 0, "Version" : "V1.0" }, "HardWare" : "50H20L", "MacAddr" : "001217f7d38a", "MfrsInfo" : null, "NewVersionSN" : "70e40dbc089370cf", "OldVersionSN" : "6d8facd8d027bf13", "SerialNumber" : "6d8facd8d027bf13", "SoftExAbilityMask" : 0, "SoftWare" : "V4.02.R12.00031520.11012.042800.00200" }, "Header" : { "MessageType" : "REPORT_CAPS_DEV_INFO_REQ" } } }
+
+[DnsDebug]Domain Not in This Map i = 0, domain = caps.secu100.net
+[DNSDebug]Init Dns Get Dns ip:8.8.8.8, Socketfd: 79
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed caps.secu100.net, DNS:223.5.5.5, i = 0
+[DNSDebug]Init Dns Get Dns ip:223.5.5.5, Socketfd: 79
+[DNSDebug] recv DNS Req failed ret = -1!!!
+[DNSDebug]recv Dns req failed caps.secu100.net, DNS:114.114.114.114, i = 1
+[error] PushDevInfo HTTPClientSendRequest failed
+===gethostbyname error for host:secu100.net
+GetNatServerIP error 
+ ===================GetNatServerIP===============> 
+CloudUpgrade::SetServerAddr: Address error! Errorcode : Name or service not known
+onTimerCheckNewFirmware  auto try to check new fileware and try to upgrade numbers  is  12 
+============onAlarm=========== arg=[1]
+============onAlarm=========== arg=[1]
+
