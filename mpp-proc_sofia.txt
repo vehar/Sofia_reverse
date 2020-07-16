@@ -1,0 +1,1036 @@
+# cat acodec
+
+[ACODEC] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:43]
+
+-----ACODEC PARAM--------------------------------------------------------------
+   LGain(dB)   RGain(dB) DacLVol(dB) DacRVol(dB) AdcLVol(dB) AdcRVol(dB) MicLMut MicRMut DacLMut DacRMut  BoostL  BoostR
+      20.0       0.0         6         -21           0           0           0       0       0       0       1       1
+# cat adec
+
+[ADEC] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:44]
+
+-----ADEC CHN ATTR--------------------------------------------------------------
+ChnId  PlType  ADPCMType BufSize        G726Rate    Mode OriSendCnt    SendCnt     GetCnt     PutCnt
+    0   g711a       NULL      30            NULL  packet        194        194        194        194
+# cat aenc
+
+[AENC] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:44]
+
+-----AENC CHN ATTR--------------------------------------------------------------
+ChnId  PlType  ADPCMType  PoiNum BufSize        G726Rate
+    0   g711a       NULL     160      30            NULL
+
+-----AENC CHN STATUS------------------------------------------------------------
+ChnId     RcvFrm  AiQueLost      EncOk     FrmErr    BufFull    GetStrm    RlsStrm  WtFile
+    0       2255          0         29          0       2226          0          0       N
+# cat ai
+
+[AI] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time: [Nov 26 2017, 12:44:44]
+
+
+-----AI DEV ATTR----------------------------------------------------------------
+AiDev WorkMod   SampR  BitWid  ChnCnt  ClkSel SoundMod  PoiNum  ExFlag  FrmNum
+    0 i2s_mas    8kHZ   16bit       1       0     mono     160       0      30
+
+-----AI DEV STATUS0-------------------------------------------------------------
+AiDev     IntCnt    fifoCnt    buffInt FrmTime MaxFrmTime TranLen IsrTime 
+    0       2498          0          0   16009      24355     320     102
+
+-----AI DEV STATUS1-------------------------------------------------------------
+AiDev MaxIsrTime      CBPhy  CBSize    ROffSet    WOffSet
+    0        145   8541c000    1024        280          0
+
+-----AI DEV EXTEND STATUS-------------------------------------------------------
+AiDev enTrack   bMute  Volume
+    0       0       N       0
+
+-----AI CHN STATUS--------------------------------------------------------------
+AiDev   AiChn   State    Read   Write     BufFul UsrQueLost UsrFrmDepth   u32Data0   u32Data1    UserGet    UserRls
+    0       0  enable       0       0          0          0           0   fff40825   f6d9fe1b          0          0
+
+-----AI CHN RESAMPLE STATUS-----------------------------------------------------
+AiDev AiChn   State  bResmp  PoiNum   InSampR  OutSampR
+    0     0  enable       N       0    (null)    (null)
+
+-----AI CHN VQE STATUS0---------------------------------------------------------
+AiDev AiChn   State bVqe workmod    RATE  PoiNum GainVol bAnr bAgc  bEq bHpf bAec bRnr bHdr bDrc bPeq  WrFile
+    0     0  enable    Y    comm    8kHZ     160       0    N    Y    N    N    N    N    N    N    N       N
+
+-----AI CHN VQE STATUS1---------------------------------------------------------
+AiDev AiChn   State    bAgc bUsrmod NoiseSupSwi AdjustSpeed ImproveSNR MaxGain NoiseFloor OutputMode TargetLevel  UseHPF
+    0     0  enable       Y       N           0           0          0       0          0          0           0       0
+# cat ao
+
+[AO] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time: [Nov 26 2017, 12:44:44]
+
+
+-----AO DEV ATTR----------------------------------------------------------------
+AoDev WorkMod   SampR  BitWid  ChnCnt  ClkSel SoundMod  PoiNum  ExFlag  FrmNum
+    0 i2s_mas    8kHZ   16bit       1       0     mono     160       0      30
+
+-----AO DEV STATUS0-------------------------------------------------------------
+AoDev     IntCnt    fifoCnt    buffInt FrmTime MaxFrmTime TranLen IsrTime
+    0       2535          0          0   23992      24438     320      21
+
+-----AO DEV STATUS1-------------------------------------------------------------
+AoDev MaxIsrTime      CBPhy  CBSize    ROffSet    WOffSet
+    0         65   853de000    1280          0        140
+
+-----AO DEV EXTEND STATUS-------------------------------------------------------
+AoDev enTrack   bMute  Volume
+    0       0       N       0
+
+-----AO CHN STATUS--------------------------------------------------------------
+AoDev   AoChn   State    Read   Write      BufEmp  u32Data0  u32Data1  bResmp  PoiNum InSampR  OutSampR
+    0       0  enable      14      14        2341  fd9002d0  ffc8feb8       N       0  (null)    (null)
+
+-----AO CHN VQE STATUS0---------------------------------------------------------
+AoDev AoChn   State bVqe workmod    RATE  PoiNum bAnr bAgc  bEq bHpf  WrFile
+    0     0  enable    N    comm  (null)       0    N    N    N    N       N
+# cat chnl
+
+[CHNL] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:12]
+
+Total Chnl Scheduler Count: 2 
+
+-----SCHEDULER 0 INFO----------------------------------------------------------
+   SchdlId    VpuNum
+         0         1
+
+-----VPU INFO------------------------------------------------------------------
+   VpuId    Name   State      IntCnt     TimeCnt      VpuCnt  ErrCnt      InqCnt     StartOk     StartNo      Config   Reset
+       0  VEDU_0   PAUSE        8471        5959        2512       0       11747        2512         279        2512       0
+
+-----CHNL STATE----------------------------------------------------------------
+  ChnlId    Prio    Type  TskNum   State      InqCnt     StartOk     StartNo      IntPro
+       0       0  H264E        0    IDLE        5875        1395           0        1395
+       1       0  H264E        0    IDLE        5872        1117         279        1117
+
+-----CHNL PERF-----------------------------------------------------------------
+  ChnlId        Type   StartCost     IntCost    IntCostL      HWCost     HWCycle     HWCostL   HWCostAcc
+       0      H264E          189         177         791       17224           0       21326           0
+       1      H264E          193         215         642        3455           0        4913           0
+
+-----CHNL CURRENT RUN STATE----------------------------------------------------
+   VpuId     VpuName      ChnlId        Type
+  No running channel here
+
+-----SCHEDULER 1 INFO----------------------------------------------------------
+   SchdlId    VpuNum
+         1         1
+
+-----VPU INFO------------------------------------------------------------------
+   VpuId    Name   State      IntCnt     TimeCnt      VpuCnt  ErrCnt      InqCnt     StartOk     StartNo      Config   Reset
+       0 JPEGU_0   PAUSE        8457        8455           2       0        5601           2           0           2       0
+
+-----CHNL STATE----------------------------------------------------------------
+  ChnlId    Prio    Type  TskNum   State      InqCnt     StartOk     StartNo      IntPro
+       2       0  JPEGE        0    IDLE        5601           2           0           2
+
+-----CHNL PERF-----------------------------------------------------------------
+  ChnlId        Type   StartCost     IntCost    IntCostL      HWCost     HWCycle     HWCostL   HWCostAcc
+       2      JPEGE          216         140         264        1641           0        1641           0
+
+-----CHNL CURRENT RUN STATE----------------------------------------------------
+   VpuId     VpuName      ChnlId        Type
+  No running channel here
+
+# cat h264e
+
+[H264E] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:34]
+
+-----MODULE PARAM--------------------------------------------------------------
+   H264eOneStreamBuffer      H264eVBSource   H264ePowerSaveEn   H264eMiniBufMode  H264eRcnEqualRef bQpHstgrmEn
+                      0                  1                  1                  1                 0           0
+-----CHN ATTR------------------------------------------------------------------
+     ID  MaxWidth MaxHeight     Width    Height   profile   C2GEn   BufSize   ByFrame   GopMode   MaxStrCnt
+      0      2048      1536      1920      1080        mp       N   1572864         Y   NormalP         200
+      1       704       576       704       576        mp       N    202752         Y   NormalP         200
+
+-----PICTURE INFO--------------------------------------------------------------
+     ID     EncdStart   EncdSucceed        Lost        Disc       Pskip      Recode      RlsStr     UnrdStr
+      0          1657          1656           0           0           0           0        1656           0
+      1          1326          1324           0           0           0           2        1324           0
+
+-----STREAM BUFFER-------------------------------------------------------------
+     ID     Base        RdTail      RdHead      WrTail      WrHead      DataLen     BufFree     
+     0      0xc6400000  0x4c040     0x4c040     0x4c040     0x4c040     0           1572800     
+     1      0xc6340000  0x20f00     0x20f00     0x20f00     0x20f00     0           204736      
+
+-----RefParam INFO--------------------------------------------------------------
+     ID      EnPred        Base     Enhance
+      0           Y           1           0
+      1           Y           1           0
+
+-----ROIBG INFO------------------------------------------------------------------
+     ID   BgSrcFr   BgTarFr
+      0        -1        -1
+      1        -1        -1
+
+-----Syntax INFO1--------------------------------------------------------------
+     ID SlcspltEn   Slcmode   Slcsize   IntraRefresh  enIslice    RefreshLine   QpOfIDR
+      0         N       N/A       N/A              N         N             17        45
+      1         N       N/A       N/A              N         N              9        45
+
+-----Inter & Intra prediction INFO---------------------------------------------
+     ID   profile  HWsize  VWsize  P16x16   P16x8   P8x16    P8x8   MvExt  I16x16    Inxn    Ipcm
+      0        mp       0       0       Y       Y       Y       Y       Y       Y       Y       Y
+      1        mp       0       0       Y       Y       Y       Y       Y       Y       Y       Y
+
+-----Syntax INFO2--------------------------------------------------------------
+     ID   profile   EntrpyI   EntrpyP   EntrpyB  Itrans  Ptrans QMatrix   POC   DblkIdc   alpha    beta
+      0        mp     cabac     cabac     cavlc     4x4     4x4       N     0         0       0       0
+      1        mp     cabac     cabac     cavlc     4x4     4x4       N     0         0       0       0
+
+# cat h265e
+
+[H265E] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:37]
+
+-----MODULE PARAM--------------------------------------------------------------
+   H265eOneStreamBuffer   H265ePowerSaveEn   H265eMiniBufMode bQpHstgrmEn
+                      0                  1                  1           0
+-----CHN ATTR------------------------------------------------------------------
+     ID  MaxWidth MaxHeight     Width    Height   Profile   C2GEn   BufSize   ByFrame   GopMode   MaxStrCnt
+
+-----PICTURE INFO--------------------------------------------------------------
+     ID     EncdStart   EncdSucceed        Lost        Disc       Pskip      Recode      RlsStr     UnrdStr
+
+-----STREAM BUFFER-------------------------------------------------------------
+     ID     Base        RdTail      RdHead      WrTail      WrHead      DataLen     BufFree     
+
+-----RefParam INFO-------------------------------------------------------------
+     ID      EnPred        Base     Enhance
+
+-----ROIBG INFO------------------------------------------------------------------
+     ID   BgSrcFr   BgTarFr
+
+-----Syntax INFO1--------------------------------------------------------------
+     ID SlcspltEn   Slcmode   Slcsize   bCrossSlc   IntraRefresh  enIslice    RefreshLine   QpOfIDR
+
+-----Syntax INFO2--------------------------------------------------------------
+     ID    DblkEn    Tc      Beta   Saoluma Saochroma  EntrpyFlag
+
+-----Syntax INFO3--------------------------------------------------------------
+     ID  TimInfFlag   NumInTick    TimeScal     DiffOne
+
+-----Pu INFO-------------------------------------------------------------------
+     ID  Pu32En  Pu16En   Pu8En   Pu4En ConsIntra  IntraSmo    IpcmEn  PcmLoFil  NumMergCan
+
+-----Trans INFO----------------------------------------------------------------
+     ID  TranByPass    TranSkip  CbQpOffset  CrQpOffset
+
+# cat hi_mipi
+
+Module: [MIPI], Build Time: [Nov 26 2017, 12:45:41]
+
+-----Combo DEV ATTR-----------------------------------------------------------------
+ Devno WorkMode RawDataType LinkIdx LaneCount        LaneId     PhyData
+     0     LVDS       RAW12       0         4    0, 1, 2, 3  0x8c37e57f
+
+-----Mipi Crop Info-----------------------------------------------------------------
+   Devno   bEnCrop    ImgX    ImgY    ImgW    ImgH
+       0         0       0       0       0       0
+
+-----lvds detect info----------------------------------------------------
+ Devno WDR_Frame   width  height
+     0       LEF    1920    1110
+     0      SEF1       0       0
+     0      SEF2       0       0
+     0      SEF3       0       0
+
+-----fsm timeout and escape info---------------------------------------------
+ link clkTOutCnt d0TOutCnt   d1TOutCnt   d2TOutCnt   d3TOutCnt clkEscCnt  d0EscCnt  d1EscCnt  d2EscCnt  d3EscCnt
+    0          0         0           0           0           0         0         0         0         0         0
+
+-----LVDS/SUBLVDS/HISPI phy and lane state info--------------------------------------
+ Devno StatErr Link0WErr Link0RErr Link0HSynErr Link0VSynErr
+     0      0         0         0            0            0
+ Devno  Lane0Err  Lane1Err  Lane2Err  Lane3Err
+     0         0         0         0         0
+
+-----ALING Err info--------------------------------------
+ Devno FIFO_FullErr  Lane0Err  Lane1Err  Lane2Err  Lane3Err
+     0            0         0         0         0         0
+# cat isp
+
+[ISP] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:49]
+
+-----MODULE PARAM--------------------------------------------------------------
+      proc_param      update_pos         pwm_num
+              30               0               2
+
+-----DRV INFO-------------------------------------------------------------------------------------
+     IspDev     IntCnt       IntT    MaxIntT    IntGapT    MaxGapT   IntRat IspResetCnt
+          0       2230         13       1880      40029   29772105       25           2
+
+              PtIntCnt     PtIntT  PtMaxIntT  PtIntGapT  PtMaxGapT PtIntRat SensorCfgT
+                  2254          5       3261      40030   29771600       25          6
+
+-----PubAttr INFO---------------------------------------------------------------------------------
+        WndX        WndY        WndW        WndH       Bayer
+           0           0        1919        1079        GBRG
+
+-----FrameWDR INFO------------------------------------------------------------------
+          CompEn        CompMode         LongThr        ShortThr        NosRefEn
+               1               0           12032           16128               1
+
+-----BAYERNR INFO-------------------------------------------------------------
+    Enable
+         1
+
+-----AE INFO-------------------------------------------------------------------
+     Again     Dgain     IspDg   SysGain       Iso      Line   AEInter   Incrmnt             Exp   1stTime
+      4532      1024      1084      4603       468      1347         1       256         6190593    600000
+
+      Comp    EVbias    OriAve    Offset     Speed      Tole     Error       Fps   RealFps    BDelay    WDelay
+        75      1024        57        16        64         2         2     25.00      2500         8         0
+
+   MaxLine  MaxLineT    MaxAgT    MaxDgT   MaxIDgT    MaxSgT   Thresh0   Thresh1   Thresh2   Thresh3
+      1347      1347     32458      1024     16384    389120        13        40        96       128
+
+    ManuEn    MaLine      MaAg      MaDg   MaIspDg   WdrMode  ExpRatio   AnFlick   SlowMod    GainTh
+         0         0         0         0         0      LINE        64         0         1      1024
+
+    NodeId   IntTime   SysGain   IrisApe    UpStgy    DwStgy          Mltply
+         0         4      1024         1         0         4            4096
+         1      1347      1024         1         1         0         1379328
+         2      1347    389120         1         4         1       524144640
+
+    AuIrEn    IrType    MaIrEn   DbgIrSt
+         0    DCIris         0         0
+
+
+-----AWB INFO------------------------------------------------------------------
+   Gain0   Gain1   Gain2   Gain3  CoTemp
+   0x185   0x100   0x100   0x227    4784
+
+ Color00 Color01 Color02 Color10 Color11 Color12 Color20 Color21 Color22
+  0x 15b  0x806c  0x  11  0x804b  0x 18c  0x8041  0x   5  0x803c  0x 137
+
+  ManuEn     Sat   Zones   Speed
+       0     102      32     512
+
+-----DRC INFO------------------------------------------------------------------
+              En          ManuEn        Strength
+               1               1             128
+
+-----DEMOSAIC INFO-------------------------------------------------------------
+          Enable                   EdgeSmoothThr                    AntiAliasThr                DetailEnhanceStr
+               1                               0                            1022                               0
+
+-----SHARPEN INFO--------------------------------------------------------------
+          Enable        SharpenD      TextureThd     SharpenEdge         EdgeThd       OverShoot      UnderShoot
+               1             880               0              32               0              16              66
+
+-----FPN INFO------------------------------------------------------------------
+      En OpType Strength Offset
+       0  --       --      --
+
+-----ACM INFO------------------------------------------------------------------
+      En  DemoEn         Stretch    Clip    Wrap         CbcrThr        GainLuma         GainHue         GainSta
+       0       0               1       1       0               0              64              64              64
+# cat ive
+
+[IVE] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:45:31]
+
+-------------------------------MODULE PARAM--------------------------------------
+      save_power     max_node_num
+               1              512
+
+-------------------------------IVE QUEUE INFO------------------------------------
+    Wait      Busy   WaitCurId WaitEndId BusyCurId BusyEndId
+      0        -1         0         0         0         0
+
+--------------------------------IVE TASK INFO------------------------------------
+       Hnd   TaskFsh    LastId    TaskId   HndWrap   FshWrap
+         0         0         0         0         0         0
+
+-----------------------------------IVE RUN-TIME INFO-----------------------------
+  LastInst  CntPerSec MaxCntPerSec  TotalIntCntLastSec    TotalIntCnt     QTCnt STCnt
+         0          0            0                   0              0         0     0
+
+    CostTm   MCostTm  CostTmPerSec MCostTmPerSec  TotalIntCostTm       RunTm
+         0         0             0             0               0  1594291403
+
+----------------------------------IVE INVOKE INFO--------------------------------
+
+       DMA     Filter       CSC    FltCsc     Sobel    MagAng    Dilate     Erode
+         0          0         0         0         0         0         0         0
+
+    Thresh        And       Sub        Or     Integ      Hist ThreshS16 ThreshU16
+         0          0         0         0         0         0         0         0
+
+     16to8 OrdStatFlt   BernSen       Map    EqualH       Add       Xor       NCC
+         0          0         0         0         0         0         0         0
+
+       CCL        GMM     Canny       LBP  NormGrad        LK ShiTomasi    GradFg
+         0          0         0         0         0         0         0         0
+
+  MatchMod  UpdateMod     Radon       ANN       SVM    AdpThr  LineFltH  NoiseRmH
+         0          0         0         0         0         0         0         0
+
+ PlateChar        SAD      GMM2    Resize       CNN
+         0          0         0         0         0
+# cat jpege
+
+[JPEGE] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:41]
+
+-----MODULE PARAM--------------------------------------------------------------
+  JpegeOneStreamBuffer     JpegeMiniBufMode
+                     0                    1
+
+-----ATTRIBUTE1----------------------------------------------------------------
+ID      bMjpeg PicType  MaxWidth MaxHeight   Width      Height     BufSize       ByFrm     MCU  Qfactor C2GEn   DcfEn   
+ 2          N   YUV420     704     576       352           288      202752           Y       0      90      N       N   
+
+-----STATUS1-------------------------------------------------------------------
+ID         BufLen         FreeLen         StrmCnt         MaxStrm       
+ 2         204800          204736               0             200       
+
+-----STATUS2-------------------------------------------------------------------
+ID    PicRec    PicCoded    PicDroped    PicDisc    NoStmCnt    RcFail    PicRecode    UnrdStr      
+2     4         4           0            0          0           0         0            0            
+
+-----STREAM BUFFER-------------------------------------------------------------
+ID  Base          RdTail      RdHead      WrTail      WrHead      BufLen      DataLen     BufFree   
+2   0xc6380000    90688       90688       90688       90688       204800      0           204736      
+
+# cat logmpp
+-----LOG BUFFER STATE----------------------------------------------------------
+MaxLen  ReadPos WritePos ButtPos
+ 64(KB)       0    18870   65536
+
+-----CURRENT LOG LEVEL---------------------------------------------------------
+vb      :  3
+sys     :  3
+region  :  3
+chnl    :  3
+vpss    :  3
+venc    :  3
+h264e   :  3
+jpege   :  3
+viu     :  3
+rc      :  3
+aio     :  3
+ai      :  3
+ao      :  3
+aenc    :  3
+adec    :  3
+isp     :  3
+ive     :  3
+vedu    :  3
+vgs     :  3
+h265e   :  3
+# cat md
+
+[MD] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:45:31]
+
+-------------------------------MD CHN ATTR---------------------------------------------------------------
+NO.    W    H   Alg   SadMode  SadOutCtrl        SadT   CclMode  CclInitT CclStep     XWt     YWt   FrmRate   CostTmPerFrm
+  0  352  288     1         0           4         150         0        16       4   32768   32768         0              0
+# cat rc
+
+[RC] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:32]
+
+-----MODULE PARAM--------------------------------------------------------------
+    ClrStatAfterSetBr
+                    1
+
+------BASE PARAMS 1------------------------------------------------------------
+  ChnId    Gop  StatTm  ViFr       TrgFr ProType  RcMode  Br(kbps)  FluLev  IQp  PQp  BQp 
+      0     50       1    25        25/0      96     VBR      8192     N/A  N/A  N/A  N/A
+      1     40       1    25        20/0      96     VBR       384     N/A  N/A  N/A  N/A
+
+------BASE PARAMS 2------------------------------------------------------------
+  ChnId   EnableIdr    bQpMapEn   QpMapMode bQpMapAbsQp 
+      0           Y           N         N/A         N/A
+      1           Y           N         N/A         N/A
+
+-----RUN COMM PARAM 1----------------------------------------------------------
+  ChnId  RowQpDelta                       ThrdI(16)
+      0           2  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+      1           2  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+
+-----RUN COMM PARAM 2------------------------------------------------------------
+  ChnId  FirstFrmStartQP                  ThrdP(16)
+      0               -1  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+      1               -1  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+
+-----RUN COMM PARAM 3----------------------------------------------------------
+  ChnId       PARAM                       ThrdB(16)
+      0     DEFAULT  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+      1     DEFAULT  [   0   0   0   0   3   3   5   5   8   8   8  15  20  20  25  25]
+
+-----RUN COMM PARAM 4----------------------------------------------------------
+  ChnId                      LevelI(16)
+      0  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+      1  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+
+-----RUN COMM PARAM 5----------------------------------------------------------
+  ChnId                      LevelP(16)
+      0  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+      1  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+
+-----RUN COMM PARAM 6----------------------------------------------------------
+  ChnId                      LevelB(16)
+      0  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+      1  [   0   0   0   0   1   1   1   1   1   1   1   1   1   1   1   1]
+
+-----RUN COMM PARAM 7----------------------------------------------------------
+  ChnId   bLost     LostThr  LostFrmStr    EncGap  RCPriority   SprFrmMod     SprIFrm     SprPFrm     SprBFrm
+      0       N    83886080      NORMAl         0     BITRATE        None      500000      500000      500000
+      1       N    83886080      NORMAl         0     BITRATE        None      500000      500000      500000
+
+-----GOP MODE ATTR-------------------------------------------------------------
+  ChnId   GopMode IpQpDelta  SPInterval SPQpDelta   BFrmNum  BQpDelta  BgInterval   ViQpDelta    bAdvSmartP
+      0   NormalP         2         N/A       N/A       N/A       N/A         N/A         N/A           N/A
+      1   NormalP         2         N/A       N/A       N/A       N/A         N/A         N/A           N/A
+
+-----RUN CBR PARAM ------------------------------------------------------------
+  ChnId  MinIprop  MaxIprop   MaxQp   MinQp  MaxIQp  MinIQp  QLevel  MaxReEncTimes
+
+-----RUN VBR PARAM ------------------------------------------------------------
+  ChnId   ChgPs  MinIprop  MaxIprop   MaxQp   MinQp  MaxIQp  MinIQp  MaxReEncTimes  MaxStillQP  MinPercent   MinStillPSNR
+      0      90         1        20      45      24      45      24              2         N/A         N/A            N/A
+      1      90         1        20      45      24      45      24              2         N/A         N/A            N/A
+
+-----RUN INFO1-----------------------------------------------------------------
+  ChnId   InsBr(kbps)   InsFr    WatL   CfgBt(kb)  RealBt(kb)   IPRatio  TarPercent   StartQp   MinQp   MaxQp
+      0           752      25       0         213          28        24         N/A        24      24      45
+      1            27      20       0          11           0       155         N/A        24      24      45
+
+-----RC PERFORMANCE  INFO------------------------------------------------------
+  ChnId           StaOfstaTim          TotaOfstaTim           StaOfEndTim          TotaOfEndTim             TotalTime
+      0             151696683                293980             151717277                 45567                339547
+      1             151696453                242399             151700130                 43038                285437
+# catrgn
+/bin/sh: catrgn: not found
+# cat rgn
+
+[RGN] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:19]
+
+
+-----REGION STATUS OF OVERLAY------------------------------------------------------------
+ Hdl     Type     Used    PiFmt        W        H  BgColor      Phy     Virt   Stride
+   0        0        Y        8      472       48        0 853cc400 c65ab400      960
+   1        0        Y        8      160       48        0 853b6000 c63c0000      320
+   8        0        N        8      240       24        0 853db000 c659b000      512
+   9        0        N        8       80       24        0 853be000 c63d4000      192
+
+-----REGION STATUS OF OVERLAY BUF USED---------------------------------------------------
+ Hdl     Type  CnvsNum     buf0     buf1
+   0        0        2        0        1
+   1        0        2        1        0
+   8        0        2        0        0
+   9        0        2        0        0
+
+-----REGION CALL VGS STATUS OF OVERLAY---------------------------------------------------
+ Hdl     CallCnt      JobSuc     JobFail     TaskSuc    TaskFail      EndSuc     EndFail
+   0           0           0           0           0           0           0           0
+   1           0           0           0           0           0           0           0
+   8           0           0           0           0           0           0           0
+   9           0           0           0           0           0           0           0
+
+-----REGION CHN STATUS OF OVERLAY--------------------------------------------------------
+ Hdl  Type   Mod   Dev   Chn   bSh     X     Y  AphF  AphB Layer  bAQp    QP bQpDis  bInv  InvW  InvH  Luma  ChnM
+   0     0  VENC     0     0     Y  1208    60   120     0     7     N     0      N     N     0     0     0     0
+   1     0  VENC     0     0     Y   128  1032   120     0     7     N     0      N     N     0     0     0     0
+   8     0  VENC     0     1     Y   444    32   120     0     7     N     0      N     N     0     0     0     0
+   9     0  VENC     0     1     Y    48   552   120     0     7     N     0      N     N     0     0     0     0
+
+-----REGION STATUS OF COVER--------------------------------------------------------------
+ Hdl     Type     Used
+  34        1        N
+  35        1        N
+  36        1        N
+  37        1        N
+
+-----REGION CHN STATUS OF RECT COVER-----------------------------------------------------
+ Hdl    Type     Mod     Dev     Chn   bShow       X       Y       W       H   Field    Color   Layer
+  34       1    VPSS       0       0       N     240     134     240     134   frame        0       2
+  35       1    VPSS       0       0       N     240     134     240     134   frame        0       2
+  36       1    VPSS       0       0       N     240     134     240     134   frame        0       2
+  37       1    VPSS       0       0       N     240     134     240     134   frame        0       2
+
+-----REGION CHN STATUS OF QUAD_RANGLE COVER----------------------------------------------
+ Hdl  Type   Mod   Dev   Chn bShow    X0    Y0    X1    Y1    X2    Y2    X3    Y3 Solid Thick Shape Field    Color Layer
+
+-----REGION STATUS OF OVERLAYEX----------------------------------------------------------
+ Hdl     Type     Used    PiFmt        W        H  BgColor      Phy     Virt   Stride
+  16        3        N        8      240       24        0 85415000 c4d73000      512
+  17        3        N        8       80       24        0 85419200 c4d7d200      192
+
+-----REGION CALL VGS STATUS OF OVERLAYEX---------------------------------------------------
+ Hdl     CallCnt      JobSuc     JobFail     TaskSuc    TaskFail      EndSuc     EndFail
+  16           0           0           0           0           0           0           0
+  17           0           0           0           0           0           0           0
+
+-----REGION CHN STATUS OF OVERLAYEX------------------------------------------------------
+ Hdl    Type     Mod     Dev     Chn   Field     bSh       X       Y    AphF    AphB   Layer
+  16       3    VENC       0       2   frame       Y     112      16     120       0       2
+  17       3    VENC       0       2   frame       Y      24     264     120       0       2
+
+# cat sys
+
+[SYS] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:11]
+
+
+-----MODULE PARAM---------------------------------------------------------------
+vi_vpss_online   sensor0   sensor1  mem_total
+             0    ar0237        NA       128
+
+-----MODULE STATUS--------------------------------------------------------------
+  Status
+     run
+
+-----SCALE COEFF INFO-----------------------------------------------------------
+          RangeLevel     RangeValue    HorLum    HorChr    VerLum    VerChr
+           RANGE_0   (    0, 15/64)   LEVEL_0   LEVEL_0   LEVEL_0   LEVEL_0
+           RANGE_1   [15/64, 19/64)   LEVEL_1   LEVEL_1   LEVEL_1   LEVEL_1
+           RANGE_2   [19/64, 24/64)   LEVEL_2   LEVEL_2   LEVEL_2   LEVEL_2
+           RANGE_3   [24/64, 29/64)   LEVEL_3   LEVEL_3   LEVEL_3   LEVEL_3
+           RANGE_4   [29/64, 33/64)   LEVEL_4   LEVEL_4   LEVEL_4   LEVEL_4
+           RANGE_5   [33/64, 35/64)   LEVEL_5   LEVEL_5   LEVEL_5   LEVEL_5
+           RANGE_6   [35/64, 38/64)   LEVEL_6   LEVEL_6   LEVEL_6   LEVEL_6
+           RANGE_7   [38/64, 42/64)   LEVEL_7   LEVEL_7   LEVEL_7   LEVEL_7
+           RANGE_8   [42/64, 45/64)   LEVEL_8   LEVEL_8   LEVEL_8   LEVEL_8
+           RANGE_9   [45/64, 48/64)   LEVEL_9   LEVEL_9   LEVEL_9   LEVEL_9
+           RANGE_10  [48/64, 51/64)  LEVEL_10  LEVEL_10  LEVEL_10  LEVEL_10
+           RANGE_11  [51/64, 53/64)  LEVEL_11  LEVEL_11  LEVEL_11  LEVEL_11
+           RANGE_12  [53/64, 55/64)  LEVEL_12  LEVEL_12  LEVEL_12  LEVEL_12
+           RANGE_13  [55/64, 57/64)  LEVEL_13  LEVEL_13  LEVEL_13  LEVEL_13
+           RANGE_14  [57/64, 60/64)  LEVEL_14  LEVEL_14  LEVEL_14  LEVEL_14
+           RANGE_15  [60/64,     1]  LEVEL_15  LEVEL_15  LEVEL_15  LEVEL_15
+           RANGE_16  (    1,   MAX)  LEVEL_16  LEVEL_16  LEVEL_16  LEVEL_16
+
+-----MEM TABLE------------------------------------------------------------------
+     Mod         ModName     Dev     Chn         MmzName
+
+-----BIND RELATION TABLE--------------------------------------------------------
+  FirMod  FirDev  FirChn  SecMod  SecDev  SecChn  TirMod  TirDev  TirChn    SendCnt     rstCnt
+    vpss       0       0    venc       0       0    null       0       0          0          0
+    vpss       0       2    venc       0       1    null       0       0          0          0
+    vpss       0       2    venc       0       2    null       0       0          0          0
+     viu       0       0    vpss       0       0    venc       0       0       3461          0
+     viu       0       0    vpss       0       2    venc       0       1       3461          0
+     viu       0       0    vpss       0       2    venc       0       2       3461          0
+      ai       0       0    aenc       0       0    null       0       0       6983          0
+# cat vb
+
+[VB] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:09]
+
+-----VB MOD PARAM--------------------------------------------------------------
+CommVbRemapMode
+           NONE
+-----VB PUB CONFIG--------------------------------------------------------------
+MaxPoolCnt
+       256
+-----VB SUPPLEMENT ATTR---------------------------------------------------------
+  Config   Size0   Size1   VbCnt
+       0       0      48      81
+-----COMMON POOL CONFIG---------------------------------------------------------
+PoolId         0         1         2         3         4         5         6         7         8         9        10        11        12        13        14        15
+Size     4767744   3179520    625152    160512         0         0         0         0         0         0         0         0         0         0         0         0
+Count          3         2         7         3         0         0         0         0         0         0         0         0         0         0         0         0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     0  0x8387f000  0x0              1      -1   4767744       3   2( 2)       0
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+Sum      1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     1  0x84624000  0x0              1      -1   3179520       2   0( 0)       0
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+Sum      1     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     2  0x84c36000  0x0              1      -1    625152       7   7( 7)       6
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     3  0x85064000  0x0              1      -1    160768       3   2( 2)       1
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   0     0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+Sum      0     0     0     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     4  0x85769000  0x0              0      -2   4965888       1   0( 0)       0
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+Sum      0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     5  0x8541d000  0xc4bf0000       0      -2      1024      60  60(60)      52
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     6  0x85c26000  0x0              0      -2   4965888       1   0( 0)       0
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+Sum      0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     7  0x860e3000  0x0              0      -2   4965888       1   1( 1)       1
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     8  0x852e4000  0x0              0      -2    641536       1   0( 0)       0
+ BLK   VIU   VOU   VGS  VENC  VDEC   VDA H264E JPEGE MPEGE H264D JPEGD MPEGD  VPSS   GRP   MPI  PCIV    AI  AENC    RC  VFMW  USER H265E FISHEYE
+   0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+Sum      0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+     9  0x865a0000  0x0              0      -2    641536       1   1( 1)       0
+
+--------------------------------------------------------------------------------
+PoolId    PhysAddr    VirtAddr  IsComm   Owner     BlkSz  BlkCnt    Free MinFree
+    10  0x8663d000  0x0              0      -2    641536       1   1( 1)       1
+
+# cat venc
+
+[VENC] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:26]
+
+-----MODULE PARAM--------------------------------------------------------------
+    VencBufferCache    FrameBufRecycle     QuickSchedule  JpegClearStreamBuf OneBufferForJpegOSD
+                  0                  0                 0                   1                   0
+
+-----VENC CHN ATTR 1-----------------------------------------------------------
+      ID   Width  Height  Type  ByFrame    Sequence   LeftBytes     LeftFrm  CurPacks   GopMode  Prio
+       0    1920    1080    96        Y        3662           0           0         0   NormalP     0
+       1     704     576    96        Y        2928           0           0         0   NormalP     0
+       2     352     288    26        Y           5           0           0         2   NormalP     0
+
+-----VENC CHN ATTR 2-----------------------------------------------------------
+   VeStr   SrcFr   TarFr     Timeref  PixFmt PicAddr
+       Y      -1      -1        7396  YUV420  0x84624000
+       N      -1      -1        7396  YUV420  0x84d67400
+       Y      -1      -1        6460  YUV420  0x850b2800
+
+-----VENC CHN RECEIVE STAT-----------------------------------------------------
+      ID       Start     StartEx    RecvLeft     EncLeft
+       0           1           0           0           0
+       1           1           0           0           0
+       2           0           0           0           0
+
+-----VENC VPSS QUERY-----------------------------------------------------------
+      ID       Query     QueryOk     QueryFR       Invld        Full      VbFail   QueryFail     InfoErr        Stop
+       0           0           0           0           0           0           0           0           0           0
+       1           0           0           0           0           0           0           0           0           0
+       2           0           0           0           0           0           0           0           0           0
+
+-----VENC SEND1----------------------------------------------------------------
+      ID     VpssSnd     VInfErr     OthrSnd     OInfErr        Send        Stop        Full     CropErr    DrectSnd     SizeErr
+       0        3662           0           0           0        3662           0           0           0        3661           0
+       1        3661           0           0           0        3661           0           0           0        3661           0
+       2        3466           0           0           0           5        3461           0           0           0           0
+
+-----VENC SEND2----------------------------------------------------------------
+      ID     SendVgs     StartOk   StartFail       IntOk     IntFail      SrcAdd      SrcSub     DestAdd     DestSub
+       0           1           1           0           1           0           1           1           1           0
+       1           0           0           0           0           0           0           0           0           0
+       2           5           5           0           5           0           5           5           5           0
+
+-----VENC PIC QUEUE STATE------------------------------------------------------
+      ID    Free    Busy     Vgs
+       0       6       0       0
+       1       6       0       0
+       2       6       0       0
+
+-----VENC CHNL INFO------------------------------------------------------------
+      ID         Inq       InqOk       Start     StartOk      Config     VencInt  ChaResLost    OverLoad        Skip
+       0       11742        3662        3662        3662        3662        3662           0           0           0
+       1       15392        3663        3663        2930        2930        2930           0           0         733
+       2       13881           5           5           5           5           5           0           0           0
+
+-----VENC CROP INFO------------------------------------------------------------
+      ID  CropEn  StartX  StartY   Width  Height
+       0       N       0       0       0       0
+       1       N       0       0       0       0
+       2       N       0       0       0       0
+
+-----ROI INFO------------------------------------------------------------------
+     ID      Type     Index    bRoiEn    bAbsQp    Qp     Width    Height    StartX    StartY 
+
+
+-----VENC STREAM STATE---------------------------------------------------------
+      ID     FreeCnt     BusyCnt     UserCnt     UserGet     UserRls    GetTimes    Interval   FrameRate
+       0           4           0           0        3887        3887        3662       36327          25
+       1           4           0           0        3153        3153        2928       40002          20
+       2           1           0           0          10          10           5    29980014           0
+# cat vgs
+
+[VGS] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time[Nov 26 2017, 12:44:13]
+
+-----MODULE PARAM--------------------------------------------------------------
+    max_job_num   max_task_num   max_node_num
+            128            200            200
+
+-----RECENT JOB INFO-----------------------------------------------------------
+   SeqNo ModName  JobHdl TaskNum   State      InSize     OutSize    CostTime      HwTime
+       0    vpss     118       1  Proced      405504      101376        1570        1402
+       1    vpss     117       1  Proced      405504      101376        1591        1404
+       2    vpss     116       1  Proced      405504      101376        1636        1447
+       3    vpss     115       1  Proced      405504      101376        1647        1457
+       4    vpss     114       1  Proced      405504      101376        1626        1435
+       5    vpss     113       1  Proced      405504      101376        1600        1409
+       6    vpss     112       1  Proced      405504      101376        1607        1412
+       7    vpss     111       1  Proced      405504      101376        1604        1411
+
+-----MAX WASTE TIME JOB INFO---------------------------------------------------
+   SeqNo ModName  JobHdl TaskNum   State      InSize     OutSize    CostTime      HwTime
+       0    vpss      35       1  Proced      405504      101376        2275        2087
+
+-----VGS JOB STATUS------------------------------------------------------------
+   Success      Fail    Cancel  AllJobNum    FreeNum   BeginNum    BusyNum ProcingNum
+      1143         0         0        128        128          0          0          0
+
+-----VGS TASK STATUS-----------------------------------------------------------
+   Success      Fail    Cancel AllTaskNum    FreeNum    BusyNum
+      1153         0         0        200        200          0
+
+-----VGS NODE STATUS-----------------------------------------------------------
+   AllNodeNum     BusyNum     MinFree    MaxInJob  SubmitFail   IntFail
+          200           0         196           3           0         0
+
+-----VGS INT STATUS------------------------------------------------------------
+    IntNum   inner_cnt
+      1143           0
+# cat vi
+
+[VIU] Version: [Hi3516CV300_MPP_V1.0.3.0 B020 Release], Build Time: [Nov 26 2017, 12:44:21]
+
+-----MODULE PARAM---------------------------------------------------------------
+detect_err_frame  drop_err_frame   stop_int_level    yuv_skip   delay_line
+              10               0                0           0           16
+
+-----VI-VPSS ONLINE STATE-------------------------------------------------------
+     OnlineState
+         offline
+
+-----VI MODULE STATE------------------------------------------------------------
+     ModuleState
+         Started
+
+-----VI PORT SIZE---------------------------------------------------------------
+     Dev   WIDTH  HEIGHT
+       0    1920    1110
+
+-----VI DEV ATTR1---------------------------------------------------------------
+     Dev   IntfM     WkM     ComMsk0     ComMsk1   ScanM     AD0     AD1     AD2
+       0    LVDS    1Mux    fff00000           0       P      -1      -1      -1
+
+-----VI DEV ATTR2---------------------------------------------------------------
+     AD3     Seq   DPath   DType    DRev    CapX    CapY    CapW    CapH  BasW  BasH  Comp HReph VReph
+      -1     N/A     ISP     RGB       N       0      30    1920    1080     0     0     N  NONE  NONE
+
+-----VI HIGH DEV ATTR 1---------------------------------------------------------
+     Dev  InputM     WkM     ComMsk0     ComMsk1   ScanM     AD0     AD1     AD2
+
+-----VI HIGH DEV ATTR 2---------------------------------------------------------
+     AD3     Seq   CombM   CompM    ClkM     Fix    FldP   DPath   DType    DRev
+
+-----VI HIGH DEV ATTR 3---------------------------------------------------------
+    CapX    CapY    CapW    CapH  BasW  BasH  Comp HReph VReph
+
+-----VI PHYCHN ATTR 1-----------------------------------------------------------
+  PhyChn    CapX    CapY    CapW    CapH    DstW    DstH  CapSel  Mirror    Flip
+       0       0       0    1920    1080    1920    1080    both       N       N
+
+-----VI PHYCHN ATTR 2-----------------------------------------------------------
+   IntEn  PixFom  SrcRat  DstRat    Comp
+       Y   SP420      -1      -1       N
+
+-----VI PHYCHN STATUS 1---------------------------------------------------------
+  PhyChn     Dev      IntCnt  VbFail      LosInt  TopLos  BotLos  BufCnt    IntT
+       0       0        3888       0           1       0       1       2     308
+
+-----VI PHYCHN STATUS 2---------------------------------------------------------
+   SendT   Field  Stride MaxIntT     IntGapT     MaxGapT LIntCnt  ThrCnt AutoDis
+       0     frm    1920     336       40030       84412       0       0       0
+
+-----VI PHYCHN STATUS 3---------------------------------------------------------
+ CasAutD  TmgErr      ccErrN      IntRat
+       0       0           0          25
+
+-----VI LDC ATTR----------------------------------------------------------------
+ PhyChn  ViewType  Ratio minRatio  COffX  COffY Enable
+      0       All      0      0      0      0      N
+
+-----VI FLASH ATTR--------------------------------------------------------------
+ Dev   Mode StartTime  DuraTime  InterVal CapIdx Enable  FlashedNum
+   0   Once         0         0         0      0      N           0
+
+-----VI CSC ATTR----------------------------------------------------------------
+ Dev   Type HueVal  ContrVal   LumaVal  StatuVal    TVMode
+   0    709     50        50        50        50         N
+
+-----VI DCI ATTR----------------------------------------------------------------
+ Dev Enable BlackGain ContrGain LightGain  ManBlendEn  BlendRatio  BlackStretchEn
+   0      N        32        32        32          NA          NA              NA
+
+-----VI DIS ATTR----------------------------------------------------------------
+ Dev   Enable
+   0        N
+
+-----VI VC NUMBER---------------------------------------------------------------
+ Dev   Linear     DES0     DES1     DES2
+   0       NA       NA       NA       NA
+
+-----VI WDR ATTR----------------------------------------------------------------
+ Dev      Mode  BufNum    DstW    DstH  PoolId   VcNum  DesNum   State    Comp
+   0      NONE       0    1920    1080      -1       0       0    NONE       N
+
+-----VI WDR DES STATUS----------------------------------------------------------
+ Dev     Idx    IntGap    IntCnt  CcErrCnt
+
+-----VI WDR SRC STATUS----------------------------------------------------------
+ Dev     Idx    IntGap    IntCnt  CcErrCnt
+
+-----VI WDR COMBINE STATUS------------------------------------------------------
+ Dev    IntGap    IntCnt  CcErrCnt
+   0         0         0         0
+
+-----VI EXTCHN ATTR 1-----------------------------------------------------------
+  ExtChn BindChn  CropEn   CropX   CropY   CropW   CropH    DstW    DstH  PixFom
+
+-----VI EXTCHN ATTR 2-----------------------------------------------------------
+  SrcRat  DstRat   Depth    Comp
+
+-----VI CHN STATUS--------------------------------------------------------------
+   ViChn  bEnUsrP    FrmTime   FrmRate     SendCnt      SwLost    Rotate   Depth
+       0        N      40030        25        3887           0      NONE       0
+
+-----VI CHN CALL VGS STATUS 1---------------------------------------------------
+   ViChn   UsrBgnNOk   UsrCancel    UsrEndOk     UsrCbOk
+
+-----VI CHN CALL VGS STATUS 2---------------------------------------------------
+   ViChn   CovBgnNOk   CovCancel    CovEndOk     CovCbOk
+
+-----VI CHN CALL VGS STATUS 3---------------------------------------------------
+   ViChn   OsdBgnNOk   OsdCancel    OsdEndOk     OsdCbOk
+
+-----VI CHN CALL VGS STATUS 4---------------------------------------------------
+   ViChn    ScaleNOk   SclCancel    SclEndOk     SclCbOk
+
+-----VI CHN CALL VGS STATUS 5---------------------------------------------------
+   ViChn   RotateNOk   RotCancel    RotEndOk     RotCbOk
+
+-----VI CHN CALL VGS STATUS 6---------------------------------------------------
+   ViChn      LDCNOk   LDCCancel    LDCEndOk     LDCCbOk
+
+-----VI CHN CALL VGS STATUS 7---------------------------------------------------
+   ViChn   OnlineNOk   OnlCancel    OnlEndOk     OnlCbOk
+
+-----VI CHN CALL FISHEYE STATUS 8-----------------------------------------------
+   ViChn      PMFNOk   PMFCancel    PMFEndOk     PMFCbOk
+
+# cat vpss
+
+[VPSS] Version: [Hi3516CV300_MPP_V1.0.0.0 B010 Release], Build Time[Mar 20 2018, 14:57:41]
+
+
+VI-VPSS is offline.
+
+-----MODULE PARAM--------------------------------------------------------------
+  rfr_frame_comp   bOneBufferforLowDelay
+               N                       N
+
+-----VPSS GRP ATTR-------------------------------------------------------------
+   GrpID    MaxW    MaxH  PixFmt DieMode   DciEn    NrEn  HistEn SharpEn
+       0    1920    1080   SP420   nodie       N       Y       N       Y
+
+-----VPSS GRP FRAME CONTROL INFO-----------------------------------------------
+   GrpID    SrcFRate    DstFRate
+       0          -1          -1
+
+-----VPSS GRP 3DNR S_Interface V2 PARAM----------------------------------------
+   GrpID  bUsing  IES0    SBS0  SBS1  SBS2  SBS3    SDS0  SDS1  SDS2  SDS3    STH0  STH1  STH2  STH3 
+       0       Y     0     151     0   146     0     151     0   146     0     114     0    94   110 
+     MDP    LNTH MATH1 MATH2    Pro3   MDDZ1 MDDZ2    TFS1  TFS2     SFC   TFC   TPC   TRC 
+       2       0    99    99       0      80    80       9     9      70     3     3    11 
+
+-----VPSS GRP SHARPEN INFO-----------------------------------------------------
+   GrpID    Mode     ISO     WDR
+       0    Auto     484       0
+
+-----VPSS CHN PARAM------------------------------------------------------------
+   GrpID   ChnID   ChnSp
+
+-----VPSS CHN ATTR-------------------------------------------------------------
+   GrpID  PhyChnID  Enable    SpEn FrmWkEn  MirrorEn  FlipEn  SrcFRate  DstFRate
+       0         0       Y       N       N         N       N        25        25
+       0         2       Y       N       N         N       N        -1        -1
+
+-----VPSS PHY CHN MODE---------------------------------------------------------
+   GrpID  PhyChnID   WorkMode   Width  Height  Double  Pixfmt    Comp
+       0         0       USER    1920    1080       N   SP420       N
+       0         2       USER     704     576       N   SP420       N
+
+-----VPSS EXT-CHN ATTR---------------------------------------------------------
+   GrpID  ExtChnID  Enable  SrcChn   Width  Height  Srcfrc  Dstfrc  Pixfmt
+       0         4       Y       2     352     288      -1      -1   SP420
+
+-----VPSS EXT-CHN CROP ATTR----------------------------------------------------
+   GrpID  ExtChnID  CropEn  CoorType   CoorX   CoorY   Width  Height
+       0         4       N       RIT       0       0       0       0
+
+-----VPSS GRP CROP INFO--------------------------------------------------------
+   GrpID  CropEn  CoorType   CoorX   CoorY   Width  Height    OriW    OriH   TrimX   TrimY TrimWid TrimHgt
+       0       N       RIT       0       0       0       0    1920    1080       0       0    1920    1080
+
+-----VPSS CHN CROP INFO--------------------------------------------------------
+   GrpID   ChnID  CropEn  CoorType   CoorX   CoorY   Width  Height   TrimX   TrimY TrimWid TrimHgt
+       0       2       N       RIT       0       0       0       0       0       0     704     576
+
+-----VPSS GRP PIC QUEUE--------------------------------------------------------
+   GrpID FreeLen BusyLen   Delay  Backup
+       0       8       0       0       N
+
+-----VPSS GRP WORK STATUS------------------------------------------------------
+   GrpID         RecvPic  ViLost    VdecLost           NewDo   OldDo NewUnDo         OldUnDo  NoHist StartFl  bStart  CostTm MaxCostTm
+       0            5338       0           0            5338       0       0               0       0       0       Y    9439     13535
+
+-----VPSS CHN WORK STATUS------------------------------------------------------
+   GrpID   ChnID    WorkMode   Depth          SendOk  bConfident     bDouble
+       0       0        USER       0            5301           Y           N
+       0       2        USER       0            5300           Y           N
+       0       4        USER       1               0           Y           N
+
+-----VPSS CHN OUTPUT RESOLUTION------------------------------------------------
+   GrpID   ChnID  Enable   Width  Height  Pixfmt    Comp   FrameRate
+       0       0       Y    1920    1080   SP420       N          25
+       0       2       Y     704     576   SP420       N          25
+       0       4       Y     352     288   SP420       N           7
+
+-----VPSS NR PARAM-------------------------------------------------------------
+   GrpID     REF      Comp  CurNRInt  CurNRVer
+       0     RFR         N         S        V2
+
+-----VPSS CHN ROTATE INFO------------------------------------------------------
+   GrpID   ChnID  Rotate
+
+-----VPSS CHN LDC ATTR---------------------------------------------------------
+   GrpID   ChnID  Enable  ViewType   Xoffset   Yoffset   Ratio
+
+-----DRV WORK STATUS-----------------------------------------------------------
+       StartSuc0   StartSuc1         LinkInt     NodeInt   StartErr0  NodeIdErr0   StartErr1  NodeIdErr1      BusErr
+            5338           0            5338           0           0           0           0           0           0
+
+-----DRV ONLINE INT STATUS-----------------------------------------------------
+    FrmCntPerSec     FrmStartCnt   FrmErrCnt  FrmFlowCnt   Chn0LowDelayCnt   Chn1LowDelayCnt   Chn2LowDelayCnt
+               0               0           0           0                 0                 0                 0
+
+-----DRV NODE QUEUE------------------------------------------------------------
+ FreeNum WaitNum  Busy00  Busy01    Sel0  Busy10  Busy11    Sel1
+      33       0       0       0       0       0       0       0
+# 
